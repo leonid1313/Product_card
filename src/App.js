@@ -19,7 +19,6 @@ function App() {
   }
 
   let minObj;
-
   if (posts.length !== 0) {
     minObj = [...posts].reduce(function(min, obj) {
       return obj.price > min.price? min : obj;
