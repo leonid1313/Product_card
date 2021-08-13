@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/leonid1313/Product_card/tree/main/static/css/main.91030a94.chunk.css",
-    "main.js": "/leonid1313/Product_card/tree/main/static/js/main.43866c77.chunk.js",
-    "main.js.map": "/leonid1313/Product_card/tree/main/static/js/main.43866c77.chunk.js.map",
-    "runtime-main.js": "/leonid1313/Product_card/tree/main/static/js/runtime-main.a718eb8e.js",
-    "runtime-main.js.map": "/leonid1313/Product_card/tree/main/static/js/runtime-main.a718eb8e.js.map",
-    "static/css/2.45e558b8.chunk.css": "/leonid1313/Product_card/tree/main/static/css/2.45e558b8.chunk.css",
-    "static/js/2.95befc63.chunk.js": "/leonid1313/Product_card/tree/main/static/js/2.95befc63.chunk.js",
-    "static/js/2.95befc63.chunk.js.map": "/leonid1313/Product_card/tree/main/static/js/2.95befc63.chunk.js.map",
-    "index.html": "/leonid1313/Product_card/tree/main/index.html",
-    "static/css/2.45e558b8.chunk.css.map": "/leonid1313/Product_card/tree/main/static/css/2.45e558b8.chunk.css.map",
-    "static/css/main.91030a94.chunk.css.map": "/leonid1313/Product_card/tree/main/static/css/main.91030a94.chunk.css.map",
-    "static/js/2.95befc63.chunk.js.LICENSE.txt": "/leonid1313/Product_card/tree/main/static/js/2.95befc63.chunk.js.LICENSE.txt",
-    "static/media/all.css": "/leonid1313/Product_card/tree/main/static/media/fa-solid-900.eeccf4f6.woff"
+    "main.css": "/leonid1313/Product_card/static/css/main.91030a94.chunk.css",
+    "main.js": "/leonid1313/Product_card/static/js/main.43866c77.chunk.js",
+    "main.js.map": "/leonid1313/Product_card/static/js/main.43866c77.chunk.js.map",
+    "runtime-main.js": "/leonid1313/Product_card/static/js/runtime-main.4477e94b.js",
+    "runtime-main.js.map": "/leonid1313/Product_card/static/js/runtime-main.4477e94b.js.map",
+    "static/css/2.31ba341d.chunk.css": "/leonid1313/Product_card/static/css/2.31ba341d.chunk.css",
+    "static/js/2.95befc63.chunk.js": "/leonid1313/Product_card/static/js/2.95befc63.chunk.js",
+    "static/js/2.95befc63.chunk.js.map": "/leonid1313/Product_card/static/js/2.95befc63.chunk.js.map",
+    "index.html": "/leonid1313/Product_card/index.html",
+    "static/css/2.31ba341d.chunk.css.map": "/leonid1313/Product_card/static/css/2.31ba341d.chunk.css.map",
+    "static/css/main.91030a94.chunk.css.map": "/leonid1313/Product_card/static/css/main.91030a94.chunk.css.map",
+    "static/js/2.95befc63.chunk.js.LICENSE.txt": "/leonid1313/Product_card/static/js/2.95befc63.chunk.js.LICENSE.txt",
+    "static/media/all.css": "/leonid1313/Product_card/static/media/fa-solid-900.eeccf4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.a718eb8e.js",
-    "static/css/2.45e558b8.chunk.css",
+    "static/js/runtime-main.4477e94b.js",
+    "static/css/2.31ba341d.chunk.css",
     "static/js/2.95befc63.chunk.js",
     "static/css/main.91030a94.chunk.css",
     "static/js/main.43866c77.chunk.js"
