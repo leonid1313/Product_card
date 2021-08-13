@@ -4,7 +4,7 @@ import MyInput from '../UI/Input/MyInput'
 import './Form.css'
 import '../UI/button/MyButton.css'
 
-const Form = ({onCancel, cardName}) => {
+const Form = ({onCancel, cardName, cardPrice}) => {
 
   const [names, setNames] = useState('');
   const [number, setNumber] = useState('');
@@ -68,7 +68,7 @@ const Form = ({onCancel, cardName}) => {
     } else {
       console.log(names)
       console.log(number)
-      console.log(cardName);
+      console.log(cardName, cardPrice);
       setNames('')
       setNumber('')
       onCancel(false)

@@ -36,7 +36,7 @@ const Modal = ({
               {price}
             </p>
           </div>
-          <Form onCancel={onCancel} cardName={name}/>
+          <Form onCancel={onCancel} cardName={name} cardPrice={price}/>
         </div>
     </>
   );
