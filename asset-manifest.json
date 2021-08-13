@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/product_card/static/css/main.5cff68db.chunk.css",
-    "main.js": "/product_card/static/js/main.6925a223.chunk.js",
-    "main.js.map": "/product_card/static/js/main.6925a223.chunk.js.map",
+    "main.css": "/product_card/static/css/main.91030a94.chunk.css",
+    "main.js": "/product_card/static/js/main.f5ba78e9.chunk.js",
+    "main.js.map": "/product_card/static/js/main.f5ba78e9.chunk.js.map",
     "runtime-main.js": "/product_card/static/js/runtime-main.16211da1.js",
     "runtime-main.js.map": "/product_card/static/js/runtime-main.16211da1.js.map",
-    "static/js/2.d726cc48.chunk.js": "/product_card/static/js/2.d726cc48.chunk.js",
-    "static/js/2.d726cc48.chunk.js.map": "/product_card/static/js/2.d726cc48.chunk.js.map",
+    "static/css/2.1983b814.chunk.css": "/product_card/static/css/2.1983b814.chunk.css",
+    "static/js/2.95befc63.chunk.js": "/product_card/static/js/2.95befc63.chunk.js",
+    "static/js/2.95befc63.chunk.js.map": "/product_card/static/js/2.95befc63.chunk.js.map",
     "index.html": "/product_card/index.html",
-    "static/css/main.5cff68db.chunk.css.map": "/product_card/static/css/main.5cff68db.chunk.css.map",
-    "static/js/2.d726cc48.chunk.js.LICENSE.txt": "/product_card/static/js/2.d726cc48.chunk.js.LICENSE.txt"
+    "static/css/2.1983b814.chunk.css.map": "/product_card/static/css/2.1983b814.chunk.css.map",
+    "static/css/main.91030a94.chunk.css.map": "/product_card/static/css/main.91030a94.chunk.css.map",
+    "static/js/2.95befc63.chunk.js.LICENSE.txt": "/product_card/static/js/2.95befc63.chunk.js.LICENSE.txt",
+    "static/media/all.css": "/product_card/static/media/fa-solid-900.eeccf4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.16211da1.js",
-    "static/js/2.d726cc48.chunk.js",
-    "static/css/main.5cff68db.chunk.css",
-    "static/js/main.6925a223.chunk.js"
+    "static/css/2.1983b814.chunk.css",
+    "static/js/2.95befc63.chunk.js",
+    "static/css/main.91030a94.chunk.css",
+    "static/js/main.f5ba78e9.chunk.js"
   ]
 }
