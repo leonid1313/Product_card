@@ -3,7 +3,7 @@
   z-index: 10;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .container-modal {
@@ -45,4 +45,11 @@
 
 .text-price__modal {
   text-align: center;
+}
+
+@media (max-width: 420px) {
+
+  .card-modal { 
+    width: 300px;
+  }
 }

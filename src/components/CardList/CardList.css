@@ -4,3 +4,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+@media (max-width: 420px) {
+  .cards {
+    padding: 100px 20px;
+  }
+}
