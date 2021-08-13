@@ -1,0 +1,46 @@
+.input-error {
+  border: 1px solid red;
+  width: 100%;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 16px;
+}
+
+.circle-error {
+  position: relative;
+  top: -35px;
+  left: 88%;
+  color: red;
+}
+
+.container-error {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  letter-spacing: -0.02em;
+
+  color: #E43F3F;
+}
+
+.button-order {
+  padding: 16px 48px;
+  width: 100%;
+  margin: 32px 0;
+  text-transform: uppercase;
+}
+
+.button-order:hover {
+  color: white;
+  background-color: #4BCFA0;
+}
+
+.button-order:hover span {
+  display:none
+}
+
+.button-order:hover:before {
+  content: "order \2794";
+}
