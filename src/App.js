@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './styles/App.css';
 import {getProduct} from './api/product'
 import MyButton from './components/UI/button/MyButton'
-import { CardList } from './components/CardList/CardList.jsx';
+import CardList from './components/CardList/CardList.jsx';
 import Modal from './components/Modal/Modal';
 
 function App() {

@@ -3,7 +3,7 @@ import React from 'react';
 const MyButton = ({children, ...props}) => {
 
   return (
-    <button {...props}>
+    <button {...props} >
       {children}
     </button>
   )

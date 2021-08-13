@@ -13,32 +13,6 @@ body {
   max-width: 1200px;
 }
 
-.card {
-  margin-top: 40px;
-  width: 352px;
-  align-items: center;
-  padding: 32px;
-  border-radius: 24px;
-  background-color: #fff;
-}
-
-.button-add {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 64px;
-  height: 56px;
-  border-radius: 16px;
-  background-color: white;
-  text-transform: uppercase;
-  color: #4BCFA0;
-  transition: 0.5s linear;
-}
-
-.button-add:hover {
-  background-color: #4BCFA0;
-  color: white;
-  cursor: pointer;
-}
-
 .button {
   border: none;
   align-items: center;
@@ -49,153 +23,11 @@ body {
   color: white;
   margin: 80px auto;
   display: block;
+  transition: 0.5s linear;
 }
 
 .button:hover {
   cursor: pointer;
-}
-
-.container-price {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cards {
-  padding-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.text-price {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 72px;
-}
-
-.span-price {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 35px;
-  letter-spacing: -0.02em;
-  padding-right: 4px;
-}
-
-.title-card {
-  margin-top: 8px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: -0.02em;
-}
-
-.text-card {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #000000;
-  opacity: 0.5;
-}
-
-.card-modal {
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-}
-
-.container-modal {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(119, 117, 117, 0.719);
-  top: 0;
-  left: 0;
-}
-
-.myInpt {
-  width: 100%;
-  padding: 16px;
-  margin-top: 16px;
-  border: 1px solid rgb(0, 0, 0, 0.2);
-  border-radius: 16px;
-}
-
-.myInpt:active {
-  border: 1px solid #4BCFA0;
-}
-
-.myInpt:active {
-  border: 1px solid #4BCFA0;
-  border-radius: 16px;
-}
-
-.button-order {
-  padding: 16px 48px;
-  width: 100%;
-  margin: 32px 0;
-  text-transform: uppercase;
-}
-
-.button-order:hover span {
-  display:none
-}
-
-.button-order:hover:before {
-  content: "order \2794";
-}
-
-.button-close {
-  position: absolute;
-  top: 6%;
-  left: 93%;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  color: #000000;
-  font-size: 15px;
-
-  background: #F2F2F2;
-}
-
-.text-card__modal {
-  text-align: center;
-  margin: 8px 0px;
-}
-
-.title-card__modal {
-  text-align: center;
-}
-
-.text-price__modal {
-  text-align: center;
-}
-
-.container-price__modal {
-  display: block;
-}
-
-.container-error {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-
-  letter-spacing: -0.02em;
-
-  color: #E43F3F;
+  background-color: white;
+  color: #4BCFA0;
 }

@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import MyButton from '../UI/button/MyButton';
 import MyInput from '../UI/Input/MyInput'
+import './Form.css'
+import '../UI/button/MyButton.css'
 
-const Form = () => {
+const Form = ({onCancel, cardName}) => {
 
   const [names, setNames] = useState('');
   const [number, setNumber] = useState('');
@@ -60,11 +62,19 @@ const Form = () => {
   }
 
   const clickButton = () => {
-    console.log(names)
-    console.log(number)
-    setNames('')
-    setNumber('')
+    if ((setNames('') || setNumber(''))) {
+      setNamesError('This field in required')
+      setNumberError('This field in required')
+    } else {
+      console.log(names)
+      console.log(number)
+      console.log(cardName);
+      setNames('')
+      setNumber('')
+      onCancel(false)
+    }
   }
+
 
   return (
     <>
@@ -72,39 +82,77 @@ const Form = () => {
             className="form-container"
             onSubmit={(event) => event.preventDefault()}
           >
-            <MyInput
-              onChange={event => nameHandler(event)}
-              value={names}
-              onBlur = {event => blurHandler(event)}
-              name="name"
-              placeholder="Name"
-              type="text"
-            />
-            {(namesDirty && namesError) && 
-              <div className="container-error">{namesError}</div>
+            {(namesDirty && namesError)
+              ? (
+                <>
+                  <MyInput
+                    onChange={event => nameHandler(event)}
+                    value={names}
+                    onBlur = {event => blurHandler(event)}
+                    name="name"
+                    placeholder="Name"
+                    type="text"
+                    className="input-error"
+                  />
+                  <i className="far fa-times-circle circle-error"/>
+                  <div className="container-error">{namesError}</div>
+                </>
+              )
+              : 
+              (
+                <MyInput
+                  onChange={event => nameHandler(event)}
+                  value={names}
+                  onBlur = {event => blurHandler(event)}
+                  name="name"
+                  placeholder="Name"
+                  type="text"
+                  className="myInpt"
+                />
+                )
             }
-            <MyInput
-              onChange={event => numberHandler(event)}
-              value={number}
-              onBlur = {event => blurHandler(event)}
-              name="number"
-              placeholder="Number"
-              type="text"
-            />
-            {(numberDirty && numberError) && 
-              <div className="container-error">{numberError}</div>
+            {(numberError && numberDirty)
+              ? (
+                <>
+                  <MyInput
+                    onChange={event => numberHandler(event)}
+                    value={number}
+                    onBlur = {event => blurHandler(event)}
+                    name="number"
+                    placeholder="Number"
+                    type="text"
+                    className="input-error"
+                  />
+                  <i className="far fa-times-circle circle-error"/>
+                  <div className="container-error">{numberError}</div>
+                </>
+              )
+              : 
+              (
+                <MyInput
+                  onChange={event => numberHandler(event)}
+                  value={number}
+                  onBlur = {event => blurHandler(event)}
+                  name="number"
+                  placeholder="Number"
+                  type="text"
+                  className="myInpt"
+                />
+                )
             }
-            <MyButton
-              className="button button-order"
-              disabled={!formValid}
-              onClick={
-                clickButton
-              }
-            >
-              <span>
-                order
-              </span>
-            </MyButton>
+            <>
+              <MyButton
+                className="button button-order"
+                disabled={!formValid}
+                onClick={
+                  clickButton
+                }
+              >
+                <span>
+                  order
+                </span>
+              </MyButton>
+            </>
           </form>
     </>
   );

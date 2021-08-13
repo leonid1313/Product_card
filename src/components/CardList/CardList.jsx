@@ -1,7 +1,8 @@
 import React from 'react';
-import { ProductCard } from '../ProductCard/ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
+import './CardList.css'
 
-export const CardList = ({
+const CardList = ({
   cards = [],
 }) => (
   <div className="cards">
@@ -10,3 +11,5 @@ export const CardList = ({
     ))}
   </div>
 );
+
+export default CardList;

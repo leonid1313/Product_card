@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from '../Form/Form';
+import './Modal.css'
 
 const Modal = ({
   name,
@@ -8,11 +9,15 @@ const Modal = ({
   onCancel,
 }) => {
 
+  const closeModal = () => {
+    onCancel(false)
+  }
+
   return (
     <>
         <div className="card">
           <button
-            onClick={() => onCancel(false)}
+            onClick={closeModal}
             className="button-close"
           >
             X
@@ -31,7 +36,7 @@ const Modal = ({
               {price}
             </p>
           </div>
-          <Form />
+          <Form onCancel={onCancel} cardName={name}/>
         </div>
     </>
   );

@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import MyButton from '../UI/button/MyButton'
 import Modal from '../Modal/Modal';
+import './ProductCard.css'
+import '../UI/button/MyButton.css'
 
-export const ProductCard = ({
+const ProductCard = ({
   name,
   category,
   price,
@@ -15,33 +17,36 @@ export const ProductCard = ({
   }
   
   return (
-  <div className="card">
-    <div>
-      <p className="text-card">
-        {category}
-      </p>
-      <h1 className="title-card">
-        {name}
-      </h1>
+  <>
+    <div className="card">
+      <div>
+        <p className="text-card">
+          {category}
+        </p>
+        <h1 className="title-card">
+          {name}
+        </h1>
+      </div>
+      <div className="container-price">
+        <p className="text-price"> 
+          <span className="span-price">$</span> 
+          {price}
+        </p>
+        <MyButton className="button-add" onClick={openModal}>buy</MyButton>
+      </div>
     </div>
-    <div className="container-price">
-      <p className="text-price"> 
-        <span className="span-price">$</span> 
-        {price}
-      </p>
-      <MyButton className="button-add" onClick={openModal}>buy</MyButton>
-      {modal && 
-        <div className="container-modal">
-          <div className="card-modal">
-            <Modal onCancel={setModal}
-              name={name}
-              category={category}
-              price={price}
-            />
+    {modal && 
+          <div className="container-modal">
+            <div className="card-modal">
+              <Modal onCancel={setModal}
+                name={name}
+                category={category}
+                price={price}
+              />
+            </div>
           </div>
-        </div>
-      }
-    </div>
-  </div>
+        }
+  </>
 )};
 
+export default ProductCard;
